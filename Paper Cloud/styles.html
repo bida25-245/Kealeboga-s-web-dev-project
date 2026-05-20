@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Cloud | Your memories, Tangile at last</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 custom-nav-border">
+    <div class="container">
+        
+                 <a class="navbar-brand" href="styles.html">
+                    <img src="logo.png" alt="Paper Coud Logo">
+                </a>
+
+        <div class="ms-auto d-flex align-items-center">
+            <a href="index.html" class="nav-link mx-3">Home</a>
+            <a href="about.html" class="nav-link mx-3">About Us</a>
+            <a href="styles.html" class="nav-link mx-3 active-link">Styles</a>
+            <a href="gallery.html" class="nav-link mx-3">Gallery</a>
+            <a href="process.html" class="nav-link mx-3">Process</a>
+            <a href="contact.html" class="nav-link mx-3">Contact</a>
+        </div>
+    </div>
+</nav>
+    </header>
+
+      <main class="container my-5">
+        <div class="container text-center my-5">
+            <h1 class="custom-page-title">Our Book Themes</h1>
+            <p class="text-muted">Choose a template layout system designed to turn your chaotic photos into gorgeous books.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div id="vintage-card" class="theme-card p-4 bg-white text-center shadow-sm">
+                        <img src="images/vintage.jpg" class="img-fluid mb-3 style-thumb" alt="Vintage Book Theme">
+                        <h2>The Vintage Theme</h2>
+                        <p>A classic layout designed to give your photos a warm, nostalgic feel.</p>
+                        <button class="btn btn-outline-dark w-100" onclick="selectTheme('Vintage', 'vintage-card')">Select Vintage</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                <div id="modern-card" class="theme-card p-4 bg-white text-center shadow-sm">
+                    <img src="images/modern.jpg" alt="Modern Book Theme" class="img-fluid style-thumb">
+                    <h2>The Modern Theme</h2>
+                    <p>Bold alignments and clean lines, perfect for travel or everyday moments.</p>
+                    <button class="btn btn-outline-dark w-100" onclick="selectTheme('Modern', 'modern-card')">Select Modern</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                <div id="minimalist-card" class="theme-card p-4 bg-white text-center shadow-sm">
+                    <img src="images/minimalisitc.jpg" alt="Minimalist Book Theme" class="img-fluid style-thumb">
+                    <h2>The Minimalist Theme</h2>
+                    <p>Elegant white spaces that let your absolute favorite memories speak for themselves.</p>
+                    <button class="btn btn-outline-dark w-100" onclick="selectTheme('Minimalist', 'minimalist-card')">Select Minimalist</button>
+                    </div>
+                </div>
+
+            </div> 
+        </main> 
+        
+    <script>
+    function selectTheme(themeName, cardId) {
+            // 1. Clears out old blue line borders from all cards
+            let allCards = document.querySelectorAll('.theme-card');
+            allCards.forEach(card => {
+                card.classList.remove('selected-active');
+            });
+
+            // 2. Applies the signature blue outline onto the clicked card target
+            let selectedCard = document.getElementById(cardId);
+            selectedCard.classList.add('selected-active');
+
+            // 3. Spits out confirmation alert message box
+            alert("Awesome choice! You have selected the " + themeName + " style for your Paper Cloud book.");
+        }
+    
+    </script>
+
+    <footer class="container-fluid bg-white custom-footer-border py-4 mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="footer-text mb-0">&copy; 2026 Paper Cloud. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="contact.html" class="footer-link-item me-3">Support</a>
+                <a href="about.html" class="footer-link-item">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+         
+</body>
+</html>

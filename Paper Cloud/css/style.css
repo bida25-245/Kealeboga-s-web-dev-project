@@ -1,0 +1,570 @@
+/* ==========================================================================
+   PAPER CLOUD BRAND STYLESHEET (BSc BIDA Assignment 1)
+   ========================================================================== */
+
+/* 1. Global Page Base & Typography */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #2b3a42; /* Soft slate dark tone for your headers */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Header & Navigation (Matches your exact HTML elements) */
+header.container-fluid {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #eaeaea !important; /* Elegant clean border separator */
+}
+
+/* Aligning your brand logo text */
+header .logo strong {
+    font-family: 'Georgia', serif;
+    font-size: 1.35rem;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+/* Formatting your navigation link group layout */
+.custom-nav {
+    display: flex;
+    gap: 25px; /* Perfect spacing between links */
+}
+
+/* Your exact light blue/slate navigation links */
+.nav-item {
+    font-family: 'Georgia', serif;
+    color: #7ba2c7 !important; /* Signature light blue text color */
+    text-decoration: none !important; /* Removes default browser underlines */
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+    font-weight: 500;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Active Page tab and Hover state highlight line matching your theme */
+.nav-item:hover, 
+.nav-item.active-tab {
+    color: #466b8c !important; /* Darker blue accent emphasis */
+    border-bottom: 2px solid #7ba2c7; /* Thin blue accent line underneath */
+}
+
+/* 3. Hero Content Typography */
+.page-main-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2b3a42;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.body-copy {
+    font-family: 'Georgia', serif;
+    color: #555555; /* Soft readable gray body text texture */
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 4. Your Signature Solid Button Style */
+.custom-theme-btn {
+    background-color: #a4c5e6 !important; /* Your signature solid light blue */
+    color: #ffffff !important;
+    font-family: 'Georgia', serif;
+    padding: 12px 28px;
+    border: none !important;
+    border-radius: 0px !important; /* Flat edges matching your frame layout boxes */
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.custom-theme-btn:hover {
+    background-color: #8bb2d6 !important; /* Soft shift on hover */
+}
+
+/* 5. Hero Image Box Dimensions */
+.wireframe-placeholder-box {
+    background-color: #ffffff;
+}
+
+.hero-main-image {
+    max-height: 480px;
+    width: 100%;
+    object-fit: cover; /* Keeps your custom image files crisp and un-stretched */
+}
+
+/* 6. Values Section Layout Styles (For your About Us sections) */
+.values-section h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.35rem;
+    color: #2b3a42;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-family: 'Georgia', serif;
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* --- Global Reset & Brand Typography --- */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #2b3a42;
+}
+
+/* Elegant, light blue/slate colored links matching your original wireframe theme */
+.nav-item {
+    font-family: 'Georgia', serif;
+    color: #7ba2c7 !important; 
+    text-decoration: none !important;
+    font-size: 0.95rem;
+}
+
+.nav-item.active-tab {
+    color: #466b8c !important;
+    border-bottom: 2px solid #7ba2c7;
+}
+
+/* Page Heading Style */
+.page-main-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2b3a42;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Soft gray paragraph formatting */
+.body-copy {
+    font-family: 'Georgia', serif;
+    color: #555555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Fixes the image sizing so it maps beautifully on the right side */
+.about-img {
+    max-width: 100%;
+    max-height: 420px; /* Limits the height so it stays elegantly sized */
+    width: auto;
+    object-fit: cover;
+    border-radius: 0px; /* Clean flat edges from your layout */
+}
+
+/* ==========================================================================
+   PAPER CLOUD GLOBAL CORE BRAND STYLES (Styles Page Custom CSS)
+   ========================================================================== */
+
+/* 1. Global Base Setup & Typography */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #2b3a42; /* Soft slate dark brand charcoal color */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Header Navigation Layout */
+.custom-nav-border {
+    border-bottom: 1px solid #eaeaea !important; /* Premium clean line split */
+}
+
+.logo strong {
+    font-family: 'Georgia', serif;
+    font-size: 1.35rem;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.custom-nav {
+    display: flex;
+    gap: 25px; /* Spaces out your navigation items evenly */
+}
+
+/* Designing navigation layout links using your specific blue palette */
+.nav-link {
+    font-family: 'Georgia', serif;
+    color: #7ba2c7 !important; /* Distinct signature light blue text tone */
+    text-decoration: none !important;
+    font-size: 0.98rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
+}
+
+/* Active Highlight state underline modifier */
+.nav-link:hover, 
+.nav-link.active-link {
+    color: #466b8c !important; /* Dark slate emphasis color fill */
+    border-bottom: 2px solid #7ba2c7; /* Brand accent horizontal underline */
+}
+
+/* 3. Main Hero Text Elements */
+.custom-page-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2b3a42;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+}
+
+.text-muted {
+    font-family: 'Georgia', serif;
+    color: #666666 !important;
+    font-size: 1.05rem;
+}
+
+/* 4. Theme Cards Layout System */
+.theme-card {
+    border: 1px solid #e2e8f0 !important;
+    background-color: #ffffff !important; /* Forces your crisp background instead of gray */
+    border-radius: 0px !important; /* Clean square flat edges matching your wireframe */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-card:hover {
+    transform: translateY(-5px); /* Gentle interactive lifting effect when hovering */
+}
+
+/* The Active Blueprint Border when a card is clicked! */
+.theme-card.selected-active {
+    border: 3px solid #7ba2c7 !important; /* Signature blue card frame wrapper */
+    background-color: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(123, 162, 199, 0.2) !important;
+}
+
+/* Standardized Image Thumbnail Grid Scaling */
+.style-thumb {
+    height: 280px;
+    width: 100%;
+    object-fit: cover; /* Prevents book mockup thumbnails from getting warped or stretched */
+    border-radius: 0px !important;
+    margin-bottom: 15px;
+}
+
+/* Typography elements within card layouts */
+.theme-card h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.35rem;
+    color: #2b3a42;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.theme-card p {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555555 !important;
+    margin-bottom: 20px;
+}
+
+/* 5. Custom Solid Theme Button Selection Override */
+.btn-outline-dark {
+    font-family: 'Georgia', serif;
+    background-color: #a4c5e6 !important; /* Your signature solid light blue color */
+    color: #ffffff !important; /* Clean white button text font */
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    border: none !important;
+    border-radius: 0px !important; /* Flat minimalist rectangle frame profile */
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #8bb2d6 !important; /* Shift to darker blue for hover feedback */
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   GALLERY PAGE SPECIFIC RULES
+   ========================================================================== */
+.gallery-frame {
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    padding: 10px;
+    transition: box-shadow 0.2s ease;
+}
+
+.gallery-frame:hover {
+    box-shadow: 0 6px 18px rgba(123, 162, 199, 0.15); /* Soft signature blue hover glow */
+}
+
+.gallery-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover; /* Keeps image ratios perfectly safe from distorting */
+    border-radius: 0px !important;
+}
+
+/* ==========================================================================
+   PAPER CLOUD PROCESS PAGE CUSTOM CSS
+   ========================================================================== */
+
+/* 1. Page Background and Reset Rules */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #2b3a42; /* Soft slate dark charcoal tone */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Unified Header Navigation Design Layout */
+.custom-nav-border {
+    border-bottom: 1px solid #eaeaea !important; /* Minimal crisp line divider */
+}
+
+/* Designing navigation layout links using your specific blue palette */
+.nav-link {
+    font-family: 'Georgia', serif;
+    color: #7ba2c7 !important; /* Distinct signature light blue text tone */
+    text-decoration: none !important;
+    font-size: 0.98rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
+}
+
+/* Active Highlight state underline modifier */
+.nav-link:hover, 
+.nav-link.active-link {
+    color: #466b8c !important; /* Dark slate emphasis color fill */
+    border-bottom: 2px solid #7ba2c7; /* Brand accent horizontal underline */
+}
+
+/* 3. Hero Titles Structure */
+.custom-page-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2b3a42;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+}
+
+.text-muted {
+    font-family: 'Georgia', serif;
+    color: #666666 !important;
+    font-size: 1.05rem;
+}
+
+/* 4. Process Workflow Cards Layout */
+.process-card {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 0px !important; /* Crisp flat edges matching your wireframes */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-4px); /* Very slight interaction push look when hovered */
+    box-shadow: 0 8px 20px rgba(123, 162, 199, 0.1) !important;
+}
+
+/* Beautiful light blue font emphasis for step sequences */
+.step-number {
+    font-family: 'Georgia', serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #7ba2c7; /* Your exact signature light blue theme accent color */
+    letter-spacing: -1px;
+}
+
+.process-step-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2b3a42;
+    margin-bottom: 12px;
+}
+
+.process-step-text {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   CONTACT PAGE CUSTOM STYLES
+   ========================================================================== */
+
+/* Styling form input labels to follow theme text */
+.custom-form-label {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: #2b3a42;
+    font-weight: 500;
+}
+
+/* Custom crisp text input field look */
+.custom-form-input {
+    font-family: 'Georgia', serif;
+    border: 1px solid #dcdcdc !important;
+    border-radius: 0px !important; /* Flat pristine architectural edges */
+    padding: 10px;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.custom-form-input:focus {
+    border-color: #7ba2c7 !important; /* Highlights field with your light blue color on focus */
+    box-shadow: none !important;
+}
+
+/* Sidebar Info Panel Design Typography */
+.contact-side-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2b3a42;
+}
+
+.contact-info-label {
+    font-family: 'Georgia', serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #7ba2c7; /* Brand accent blue labels */
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.contact-info-value {
+    font-family: 'Georgia', serif;
+    font-size: 1.05rem;
+    color: #555555;
+}
+
+/* Makes the vertical separator rule line sharp on medium-to-large displays */
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid #eaeaea !important;
+    }
+}
+
+/* ==========================================================================
+   FOOTER & MOBILE RESPONSIVENESS (MEDIA QUERIES)
+   ========================================================================== */
+
+/* --- Footer Styles --- */
+.custom-footer-border {
+    border-top: 1px solid #eaeaea !important; /* Soft top divider line */
+}
+
+.footer-text {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    color: #888888;
+}
+
+.footer-link-item {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    color: #7ba2c7 !important; /* Signature light blue link tone */
+    text-decoration: none !important;
+}
+
+.footer-link-item:hover {
+    color: #466b8c !important;
+}
+
+/* --- Media Queries for Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* 1. Shrink heavy titles so they don't break across lines clumsily */
+    .page-main-title, 
+    .custom-page-title {
+        font-size: 1.85rem !important;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    /* 2. Center copy and reduce text clustering */
+    .body-copy,
+    .text-muted {
+        font-size: 0.98rem !important;
+        text-align: center;
+    }
+    
+    /* 3. Center buttons on mobile screen stacks */
+    .custom-theme-btn,
+    .custom-submit-btn {
+        display: block !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    /* 4. Turn your custom navbar links into a neat, centered stack */
+    .custom-nav {
+        flex-direction: column;
+        gap: 12px !important;
+        text-align: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .navbar-brand {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header .container,
+    .navbar .container {
+        flex-direction: column !important;
+    }
+
+    /* 5. Clean up side margins for text columns */
+    .content-column,
+    .pe-md-5,
+    .ps-md-5 {
+        text-align: center !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    /* 6. Fix image centering and scaling so it looks tidy dropped underneath text */
+    .hero-main-image,
+    .about-img,
+    .style-thumb,
+    .gallery-img {
+        max-height: 300px !important;
+        margin-top: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* 7. Stack your footer elements vertically on tiny viewports */
+    footer .container {
+        flex-direction: column !important;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* --- Fix the Huge Logo Sizing for All Page Variations --- */
+.logo img,
+.navbar-brand img,
+.brand-logo-img {
+    height: 45px !important;    /* Keeps the logo small and elegant everywhere */
+    width: auto !important;     /* Prevents stretching out of shape */
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Keeps everything centered nicely inside the header bar */
+.navbar-brand, .logo {
+    display: flex;
+    align-items: center;
+}
